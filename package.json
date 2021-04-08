@@ -1,5 +1,5 @@
 {
-  "name": "react-firebase-hooks",
+  "name": "@mfilteau/react-firebase-hooks",
   "version": "3.1.0",
   "description": "React Hooks for Firebase",
   "author": "CS Frequency Limited (https://csfrequency.com)",
