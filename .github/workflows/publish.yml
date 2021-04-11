@@ -13,8 +13,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm install
-      - run: npm run build
+      - run: |
+          npm install
+          npm run build
 
   publish-gpr:
     needs: build
@@ -26,6 +27,8 @@ jobs:
           node-version: 14
       - name: Publish
         run: |
+          npm install
+          npm run build
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           npm publish --ignore-scripts --access public
         env:
