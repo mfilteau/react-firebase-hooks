@@ -69,8 +69,5 @@
     "firebase": ">= 8.0.0",
     "react": ">= 16.8.0"
   },
-  "typings": "index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "typings": "index.d.ts"
 }
